@@ -1,0 +1,71 @@
+<!--
+  EcoClima Barcelona — Footer component
+  Reusable snippet for multi-page setups.
+-->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#" class="logo logo--light">
+        <span class="logo__icon">❄️</span>
+        <span class="logo__text">Eco<span>Clima</span></span>
+      </a>
+      <p data-i18n="footer.tagline">Climatización eco-eficiente en Barcelona desde 2015.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.services">Servicios</h4>
+      <ul>
+        <li><a href="#servicios" data-i18n="servicios.1.title">Instalación</a></li>
+        <li><a href="#servicios" data-i18n="servicios.2.title">Mantenimiento</a></li>
+        <li><a href="#servicios" data-i18n="servicios.3.title">Reparación urgente</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.company">Empresa</h4>
+      <ul>
+        <li><a href="#ventajas" data-i18n="nav.benefits">Ventajas</a></li>
+        <li><a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.contact">Contacto</h4>
+      <ul>
+        <li><a href="tel:+34637575000" class="js-phone">+34 637 575 000</a></li>
+        <li><a href="mailto:info@ecoclimabarcelona.es">info@ecoclimabarcelona.es</a></li>
+        <li>Barcelona, España</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <div class="container">
+    <div class="footer__map">
+      <div class="footer__map-info">
+        <h4 data-i18n="footer.map.title">📍 Nos encontramos en Barcelona</h4>
+        <p data-i18n="footer.map.text">Cobertura en toda la ciudad y área metropolitana. Visita gratuita a domicilio.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Barcelona,Espa%C3%B1a"
+           target="_blank" rel="noopener"
+           class="btn btn--light btn--sm"
+           data-i18n="footer.map.cta">
+          Abrir en Google Maps ↗
+        </a>
+      </div>
+      <div class="footer__map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Barcelona,Espa%C3%B1a&output=embed&hl=es&z=12"
+          width="100%"
+          height="100%"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación EcoClima Barcelona en Google Maps"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <small>© <span id="year"></span> EcoClima Barcelona. <span data-i18n="footer.rights">Todos los derechos reservados.</span></small>
+    <small><a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a></small>
+  </div>
+</footer>

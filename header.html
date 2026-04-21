@@ -1,0 +1,35 @@
+<!--
+  EcoClima Barcelona — Header component
+  Reusable snippet. If you split the site into multiple pages,
+  load this with fetch() or any templating engine (Handlebars, Nunjucks, 11ty, Astro...).
+-->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo" aria-label="EcoClima Barcelona">
+      <span class="logo__icon" aria-hidden="true">❄️</span>
+      <span class="logo__text">Eco<span>Clima</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#ventajas" data-i18n="nav.benefits">Ventajas</a>
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a>
+      <a href="#calculadora" data-i18n="nav.calculator">Calculadora</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="lang-switch" role="group" aria-label="Language switcher">
+        <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="tel:+34637575000" class="btn btn--ghost btn--sm js-phone" data-i18n="header.call">
+        <span aria-hidden="true">📞</span> 637 575 000
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>

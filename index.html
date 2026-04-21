@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es" data-ab="A">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#10b981" />
+
+  <!-- SEO -->
+  <title data-i18n="meta.title">EcoClima Barcelona | Instalación y mantenimiento de aire acondicionado</title>
+  <meta name="description" data-i18n="meta.description" content="Instalación, reparación y mantenimiento de aire acondicionado en Barcelona. Presupuesto gratis en 24h. Eficiencia energética y garantía 2 años." />
+  <meta name="keywords" content="aire acondicionado Barcelona, instalación AC, mantenimiento, climatización, EcoClima" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ecoclimabarcelona.es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EcoClima Barcelona | Aire Acondicionado Eco-Eficiente" />
+  <meta property="og:description" content="Instalación y mantenimiento profesional de climatización en Barcelona. Presupuesto en 24h." />
+  <meta property="og:image" content="og-cover.jpg" />
+  <meta property="og:url" content="https://ecoclimabarcelona.es/" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EcoClima Barcelona" />
+  <meta name="twitter:description" content="Instalación y mantenimiento de aire acondicionado en Barcelona." />
+  <meta name="twitter:image" content="og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❄️%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Analytics 4 (reemplaza G-XXXXXXX por tu ID real) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+    // Google Ads (reemplaza AW-XXXXXXX por tu ID real)
+    gtag('config', 'AW-XXXXXXX');
+  </script>
+
+  <!-- JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "EcoClima Barcelona",
+    "image": "https://ecoclimabarcelona.es/og-cover.jpg",
+    "telephone": "+34637575000",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer Exemple 123",
+      "addressLocality": "Barcelona",
+      "postalCode": "08001",
+      "addressCountry": "ES"
+    },
+    "areaServed": "Barcelona",
+    "openingHours": "Mo-Sa 08:00-20:00"
+  }
+  </script>
+</head>
+<body>
+  <!-- ========== HEADER (sticky) ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="EcoClima Barcelona">
+        <span class="logo__icon" aria-hidden="true">❄️</span>
+        <span class="logo__text">Eco<span>Clima</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#ventajas" data-i18n="nav.benefits">Ventajas</a>
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a>
+        <a href="#calculadora" data-i18n="nav.calculator">Calculadora</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="tel:+34637575000" class="btn btn--ghost btn--sm js-phone" data-i18n="header.call">
+          <span aria-hidden="true">📞</span> 637 575 000
+        </a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== 1. HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge badge--accent" data-i18n="hero.badge">⚡ Oferta válida solo esta semana</span>
+          <h1 class="hero__title" data-i18n="hero.title">
+            Aire acondicionado en Barcelona <span class="text-gradient">desde 390€</span>
+          </h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">
+            Instalación profesional en 48h. Presupuesto gratis en 24h. Garantía oficial 2 años.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="#calculadora" class="btn btn--primary btn--lg" data-i18n="hero.cta1">
+              Calcular mi precio
+            </a>
+            <a href="https://wa.me/34637575000?text=Hola,%20quiero%20presupuesto" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg js-whatsapp" data-i18n="hero.cta2">
+              <span aria-hidden="true">💬</span> WhatsApp
+            </a>
+          </div>
+
+          <ul class="hero__trust">
+            <li><span aria-hidden="true">✓</span> <span data-i18n="hero.trust1">+1.200 instalaciones</span></li>
+            <li><span aria-hidden="true">✓</span> <span data-i18n="hero.trust2">Garantía 2 años</span></li>
+            <li><span aria-hidden="true">✓</span> <span data-i18n="hero.trust3">Técnicos certificados</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__card">
+            <div class="hero__card-head">
+              <span class="dot dot--green"></span>
+              <span data-i18n="hero.card.title">Ahorro energético real</span>
+            </div>
+            <div class="hero__card-body">
+              <div class="hero__stat"><strong>-45%</strong><span data-i18n="hero.card.stat1">en consumo eléctrico</span></div>
+              <div class="hero__stat"><strong>A+++</strong><span data-i18n="hero.card.stat2">clase energética</span></div>
+              <div class="hero__stat"><strong>24h</strong><span data-i18n="hero.card.stat3">respuesta garantizada</span></div>
+            </div>
+            <div class="hero__card-foot">
+              <span class="badge badge--eco" data-i18n="hero.card.eco">🌿 Eco-friendly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 2. VENTAJAS ========== -->
+    <section class="section" id="ventajas">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="ventajas.eyebrow">Ventajas</span>
+          <h2 class="section__title" data-i18n="ventajas.title">¿Por qué elegir EcoClima?</h2>
+          <p class="section__lead" data-i18n="ventajas.lead">Tecnología eficiente, precios claros y técnicos oficiales. Sin sorpresas.</p>
+        </header>
+
+        <div class="grid grid--4">
+          <article class="card reveal">
+            <div class="card__icon">⚡</div>
+            <h3 data-i18n="ventajas.1.title">Instalación en 48h</h3>
+            <p data-i18n="ventajas.1.text">Respuesta y montaje rápidos sin comprometer la calidad del trabajo.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🛡️</div>
+            <h3 data-i18n="ventajas.2.title">Garantía 2 años</h3>
+            <p data-i18n="ventajas.2.text">Cubrimos instalación y equipo con garantía oficial del fabricante.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🌿</div>
+            <h3 data-i18n="ventajas.3.title">Eficiencia A+++</h3>
+            <p data-i18n="ventajas.3.text">Equipos de última generación que reducen tu factura hasta un 45%.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">💶</div>
+            <h3 data-i18n="ventajas.4.title">Precio cerrado</h3>
+            <p data-i18n="ventajas.4.text">Presupuesto detallado, sin costes ocultos ni sorpresas al final.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="cta-banner reveal">
+      <div class="container cta-banner__inner">
+        <div>
+          <h3 data-i18n="cta1.title">¿Necesitas presupuesto hoy?</h3>
+          <p data-i18n="cta1.text">Respondemos en menos de 1 hora en horario laboral.</p>
+        </div>
+        <a href="https://wa.me/34637575000?text=Hola,%20quiero%20presupuesto" target="_blank" rel="noopener" class="btn btn--light btn--lg js-whatsapp" data-i18n="cta1.btn">
+          Hablar ahora
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== 3. SERVICIOS ========== -->
+    <section class="section section--alt" id="servicios">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="servicios.eyebrow">Servicios</span>
+          <h2 class="section__title" data-i18n="servicios.title">Soluciones completas de climatización</h2>
+          <p class="section__lead" data-i18n="servicios.lead">Desde la primera visita hasta el mantenimiento anual.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="service reveal">
+            <img src="service-install.jpg" alt="Instalación de aire acondicionado" loading="lazy" width="640" height="420" onerror="this.style.background='linear-gradient(135deg,#10b981,#06b6d4)';this.removeAttribute('src')" />
+            <div class="service__body">
+              <h3 data-i18n="servicios.1.title">Instalación</h3>
+              <p data-i18n="servicios.1.text">Split, multi-split y conductos. Equipos Daikin, Mitsubishi, LG.</p>
+              <a href="#calculadora" class="link" data-i18n="servicios.more">Ver precios →</a>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <img src="service-maintenance.jpg" alt="Mantenimiento de aire acondicionado" loading="lazy" width="640" height="420" onerror="this.style.background='linear-gradient(135deg,#06b6d4,#3b82f6)';this.removeAttribute('src')" />
+            <div class="service__body">
+              <h3 data-i18n="servicios.2.title">Mantenimiento</h3>
+              <p data-i18n="servicios.2.text">Revisión anual, limpieza de filtros y optimización energética.</p>
+              <a href="#calculadora" class="link" data-i18n="servicios.more">Ver precios →</a>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <img src="service-repair.jpg" alt="Reparación de aire acondicionado" loading="lazy" width="640" height="420" onerror="this.style.background='linear-gradient(135deg,#3b82f6,#10b981)';this.removeAttribute('src')" />
+            <div class="service__body">
+              <h3 data-i18n="servicios.3.title">Reparación urgente</h3>
+              <p data-i18n="servicios.3.text">Diagnóstico gratuito y reparación en el día siempre que sea posible.</p>
+              <a href="#calculadora" class="link" data-i18n="servicios.more">Ver precios →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. CÓMO TRABAJAMOS ========== -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="proceso.eyebrow">Proceso</span>
+          <h2 class="section__title" data-i18n="proceso.title">Cómo trabajamos</h2>
+          <p class="section__lead" data-i18n="proceso.lead">Simple, rápido y transparente. 4 pasos.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 data-i18n="proceso.1.title">Contacto</h3>
+            <p data-i18n="proceso.1.text">Nos escribes por WhatsApp, formulario o teléfono.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 data-i18n="proceso.2.title">Visita técnica</h3>
+            <p data-i18n="proceso.2.text">Gratis y sin compromiso en 24h hábiles.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 data-i18n="proceso.3.title">Presupuesto</h3>
+            <p data-i18n="proceso.3.text">Precio cerrado, con materiales y garantía incluidos.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 data-i18n="proceso.4.title">Instalación</h3>
+            <p data-i18n="proceso.4.text">Montaje limpio y puesta en marcha en el mismo día.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== 5. CALCULADORA ========== -->
+    <section class="section section--gradient" id="calculadora">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="calc.eyebrow">Calculadora</span>
+          <h2 class="section__title" data-i18n="calc.title">Calcula tu presupuesto al instante</h2>
+          <p class="section__lead" data-i18n="calc.lead">Responde 4 preguntas y recibe un precio estimado en segundos.</p>
+        </header>
+
+        <form class="calculator reveal" id="calculator" novalidate>
+          <div class="calculator__grid">
+            <div class="form-field">
+              <label for="tipo_servicio" data-i18n="calc.service">Tipo de servicio</label>
+              <select id="tipo_servicio" name="tipo_servicio" required>
+                <option value="instalacion" data-i18n="calc.service.install">Instalación</option>
+                <option value="mantenimiento" data-i18n="calc.service.maintenance">Mantenimiento</option>
+                <option value="reparacion" data-i18n="calc.service.repair">Reparación</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="tipo_vivienda" data-i18n="calc.housing">Tipo de vivienda</label>
+              <select id="tipo_vivienda" name="tipo_vivienda" required>
+                <option value="piso" data-i18n="calc.housing.flat">Piso</option>
+                <option value="atico" data-i18n="calc.housing.penthouse">Ático</option>
+                <option value="casa" data-i18n="calc.housing.house">Casa / chalet</option>
+                <option value="local" data-i18n="calc.housing.business">Local comercial</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="equipos" data-i18n="calc.units">Número de equipos</label>
+              <select id="equipos" name="equipos" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5+</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="accesibilidad" data-i18n="calc.access">Accesibilidad</label>
+              <select id="accesibilidad" name="accesibilidad" required>
+                <option value="facil" data-i18n="calc.access.easy">Fácil (planta baja / terraza)</option>
+                <option value="media" data-i18n="calc.access.medium">Media (balcón / patio)</option>
+                <option value="dificil" data-i18n="calc.access.hard">Difícil (fachada / andamio)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calculator__result" id="calculatorResult" aria-live="polite">
+            <span class="calculator__result-label" data-i18n="calc.result">Precio estimado:</span>
+            <span class="calculator__result-value" id="priceValue">— €</span>
+          </div>
+
+          <div class="calculator__actions">
+            <button type="button" class="btn btn--primary btn--lg" id="requestPrice" data-i18n="calc.request">
+              Solicitar este precio
+            </button>
+            <span class="calculator__note" data-i18n="calc.note">* Precio orientativo, confirmado tras visita gratuita.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== 6. TESTIMONIOS ========== -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="test.eyebrow">Opiniones</span>
+          <h2 class="section__title" data-i18n="test.title">Clientes que ya confían en nosotros</h2>
+          <p class="section__lead"><strong>4,9 / 5</strong> <span data-i18n="test.lead">basado en +320 reseñas en Google</span></p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="testimonial reveal">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p data-i18n="test.1.text">"Llegaron a la hora, trabajaron limpio y me ahorran un 40% en la factura. Recomendados 100%."</p>
+            <footer>
+              <strong>María G.</strong>
+              <span>Eixample, Barcelona</span>
+            </footer>
+          </article>
+          <article class="testimonial reveal">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p data-i18n="test.2.text">"Presupuesto claro, sin letra pequeña. Instalación impecable en un día."</p>
+            <footer>
+              <strong>Jordi M.</strong>
+              <span>Gràcia, Barcelona</span>
+            </footer>
+          </article>
+          <article class="testimonial reveal">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p data-i18n="test.3.text">"Muy profesionales. Resolvieron una avería que otros no supieron arreglar."</p>
+            <footer>
+              <strong>Laura P.</strong>
+              <span>Sant Martí, Barcelona</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. FAQ ========== -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
+          <h2 class="section__title" data-i18n="faq.title">Preguntas frecuentes</h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary data-i18n="faq.1.q">¿Cuánto cuesta una instalación de aire acondicionado?</summary>
+            <p data-i18n="faq.1.a">Desde 390€ para un split 1x1 incluyendo materiales estándar. Usa la calculadora para un precio personalizado.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary data-i18n="faq.2.q">¿Cuánto tarda la instalación?</summary>
+            <p data-i18n="faq.2.a">Entre 3 y 6 horas para un equipo estándar. Casos complejos se programan con antelación.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary data-i18n="faq.3.q">¿Dónde trabajáis?</summary>
+            <p data-i18n="faq.3.a">En toda Barcelona ciudad y área metropolitana: Badalona, L'Hospitalet, Sant Cugat, Cornellà y más.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary data-i18n="faq.4.q">¿Qué garantía ofrecéis?</summary>
+            <p data-i18n="faq.4.a">2 años de garantía en instalación y la garantía oficial del fabricante del equipo.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary data-i18n="faq.5.q">¿Aceptáis pago fraccionado?</summary>
+            <p data-i18n="faq.5.a">Sí, financiación hasta 24 meses sin intereses con aprobación previa.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. CTA FINAL ========== -->
+    <section class="cta-final reveal" id="cta">
+      <div class="container cta-final__inner">
+        <h2 data-i18n="ctaFinal.title">Solicita tu presupuesto gratis hoy</h2>
+        <p data-i18n="ctaFinal.text">Sin compromiso · Respuesta en 24h · Garantía 2 años</p>
+        <div class="cta-final__btns">
+          <a href="https://wa.me/34637575000?text=Hola,%20quiero%20presupuesto" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg js-whatsapp">
+            <span aria-hidden="true">💬</span> WhatsApp
+          </a>
+          <a href="tel:+34637575000" class="btn btn--light btn--lg js-phone">
+            <span aria-hidden="true">📞</span> 637 575 000
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trabajamos en toda Barcelona -->
+    <section class="areas reveal">
+      <div class="container">
+        <h3 data-i18n="areas.title">Trabajamos en toda Barcelona</h3>
+        <ul class="areas__list">
+          <li>Eixample</li><li>Gràcia</li><li>Sants</li><li>Sant Martí</li>
+          <li>Horta-Guinardó</li><li>Les Corts</li><li>Sarrià-Sant Gervasi</li>
+          <li>Ciutat Vella</li><li>Nou Barris</li><li>Sant Andreu</li>
+          <li>Badalona</li><li>L'Hospitalet</li><li>Sant Cugat</li><li>Cornellà</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 9. CONTACTO ========== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="contacto.eyebrow">Contacto</span>
+          <h2 class="section__title" data-i18n="contacto.title">Contáctanos</h2>
+          <p class="section__lead" data-i18n="contacto.lead">Elige el canal que prefieras, respondemos enseguida.</p>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <a href="tel:+34637575000" class="contact__item js-phone">
+              <span class="contact__icon">📞</span>
+              <div><strong>+34 637 575 000</strong><span data-i18n="contacto.phone">Lun–Sáb · 08:00–20:00</span></div>
+            </a>
+            <a href="https://wa.me/34637575000?text=Hola,%20quiero%20presupuesto" target="_blank" rel="noopener" class="contact__item js-whatsapp">
+              <span class="contact__icon">💬</span>
+              <div><strong>WhatsApp</strong><span data-i18n="contacto.wa">Respuesta en minutos</span></div>
+            </a>
+            <a href="https://t.me/ecoclimabcn" target="_blank" rel="noopener" class="contact__item">
+              <span class="contact__icon">✈️</span>
+              <div><strong>Telegram</strong><span>@ecoclimabcn</span></div>
+            </a>
+            <a href="mailto:info@ecoclimabarcelona.es" class="contact__item">
+              <span class="contact__icon">✉️</span>
+              <div><strong>info@ecoclimabarcelona.es</strong><span data-i18n="contacto.mail">Respuesta en 24h</span></div>
+            </a>
+
+            <div class="trust-badges">
+              <span class="badge">🛡️ <span data-i18n="trust.guarantee">Garantía 2 años</span></span>
+              <span class="badge">⭐ <span data-i18n="trust.rating">4,9 en Google</span></span>
+              <span class="badge">🌿 <span data-i18n="trust.eco">Eco-friendly</span></span>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="name" data-i18n="form.name">Nombre</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="María García" />
+            </div>
+            <div class="form-field">
+              <label for="phone" data-i18n="form.phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+34 600 000 000" pattern="^[+]?[0-9\s]{9,15}$" />
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="form.message">Mensaje</label>
+              <textarea id="message" name="message" rows="4" placeholder="Quiero instalar aire acondicionado en un piso de 80m²..."></textarea>
+            </div>
+            <div class="form-field form-field--consent">
+              <label>
+                <input type="checkbox" id="consent" required />
+                <span data-i18n="form.consent">Acepto la política de privacidad.</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block" data-i18n="form.submit">
+              Enviar solicitud
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo logo--light">
+          <span class="logo__icon">❄️</span>
+          <span class="logo__text">Eco<span>Clima</span></span>
+        </a>
+        <p data-i18n="footer.tagline">Climatización eco-eficiente en Barcelona desde 2015.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.services">Servicios</h4>
+        <ul>
+          <li><a href="#servicios" data-i18n="servicios.1.title">Instalación</a></li>
+          <li><a href="#servicios" data-i18n="servicios.2.title">Mantenimiento</a></li>
+          <li><a href="#servicios" data-i18n="servicios.3.title">Reparación urgente</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.company">Empresa</h4>
+        <ul>
+          <li><a href="#ventajas" data-i18n="nav.benefits">Ventajas</a></li>
+          <li><a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contacto</h4>
+        <ul>
+          <li><a href="tel:+34637575000" class="js-phone">+34 637 575 000</a></li>
+          <li><a href="mailto:info@ecoclimabarcelona.es">info@ecoclimabarcelona.es</a></li>
+          <li>Barcelona, España</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="container">
+      <div class="footer__map">
+        <div class="footer__map-info">
+          <h4 data-i18n="footer.map.title">📍 Nos encontramos en Barcelona</h4>
+          <p data-i18n="footer.map.text">Cobertura en toda la ciudad y área metropolitana. Visita gratuita a domicilio.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Barcelona,Espa%C3%B1a"
+             target="_blank" rel="noopener"
+             class="btn btn--light btn--sm"
+             data-i18n="footer.map.cta">
+            Abrir en Google Maps ↗
+          </a>
+        </div>
+        <div class="footer__map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Barcelona,Espa%C3%B1a&output=embed&hl=es&z=12"
+            width="100%"
+            height="100%"
+            style="border:0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación EcoClima Barcelona en Google Maps"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> EcoClima Barcelona. <span data-i18n="footer.rights">Todos los derechos reservados.</span></small>
+      <small><a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a></small>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING CONTACT STACK (chatbot → telegram → whatsapp) ========== -->
+  <div class="fab-stack" aria-label="Quick contact">
+    <!-- Chatbot (top) -->
+    <div class="chatbot" id="chatbot" aria-live="polite">
+      <button class="fab fab--bot" id="chatbotToggle" aria-expanded="false" aria-controls="chatbotWindow" aria-label="Open chat">
+        <span aria-hidden="true">💬</span>
+      </button>
+    </div>
+
+    <!-- Telegram (middle) -->
+    <a href="https://t.me/ecoclimabcn" target="_blank" rel="noopener" class="fab fab--tg js-telegram" aria-label="Telegram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M21.94 3.32a1.2 1.2 0 0 0-1.23-.19L2.9 10.57a1.2 1.2 0 0 0 .07 2.24l4.08 1.35 2.24 6.63a1.2 1.2 0 0 0 2.01.45l2.5-2.63 4.52 3.32a1.2 1.2 0 0 0 1.88-.72l3.08-15.69a1.2 1.2 0 0 0-.44-1.2ZM9.78 14.5l-.92 4.23-1.5-4.45 9.9-7.7-7.48 7.92Z"/>
+      </svg>
+    </a>
+
+    <!-- WhatsApp (bottom) -->
+    <a href="https://wa.me/34637575000?text=Hola,%20quiero%20presupuesto" target="_blank" rel="noopener" class="fab fab--wa js-whatsapp" aria-label="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17c-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.47.13-.62.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.15 4.55.72.31 1.28.5 1.72.64.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+        <path fill="currentColor" d="M20.52 3.48A11.9 11.9 0 0 0 12.04 0C5.47 0 .13 5.34.13 11.91c0 2.1.55 4.14 1.6 5.95L0 24l6.3-1.65a11.9 11.9 0 0 0 5.74 1.46h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.49-8.42zm-8.48 18.3h-.01a9.87 9.87 0 0 1-5.04-1.38l-.36-.22-3.74.98 1-3.64-.24-.37a9.88 9.88 0 0 1-1.5-5.23c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 7 2.9a9.83 9.83 0 0 1 2.9 7c-.01 5.46-4.45 9.86-9.91 9.86z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Chatbot window (separate from stack, expands upward-left) -->
+  <div class="chatbot-window-wrap">
+    <div class="chatbot__window" id="chatbotWindow" hidden>
+      <header class="chatbot__header">
+        <div>
+          <strong data-i18n="chatbot.title">EcoBot</strong>
+          <span data-i18n="chatbot.subtitle">Normalmente responde en 1 min</span>
+        </div>
+        <button class="chatbot__close" id="chatbotClose" aria-label="Close chat">×</button>
+      </header>
+      <div class="chatbot__messages" id="chatbotMessages"></div>
+      <div class="chatbot__quick" id="chatbotQuick"></div>
+      <form class="chatbot__form" id="chatbotForm">
+        <input type="text" id="chatbotInput" placeholder="Escribe tu mensaje..." autocomplete="off" />
+        <button type="submit" aria-label="Send">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="analytics.js" defer></script>
+  <script src="calculator.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
