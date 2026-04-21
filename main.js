@@ -89,6 +89,7 @@
       'nav.contact': 'Contacto',
       'header.call': '<span aria-hidden="true">📞</span> 637 575 000',
 
+      'hero.cta3':   'Telegram',
       'hero.trust1': '+1.200 instalaciones',
       'hero.trust2': 'Garantía 2 años',
       'hero.trust3': 'Técnicos certificados',
@@ -238,6 +239,7 @@
       'nav.contact': 'Contact',
       'header.call': '<span aria-hidden="true">📞</span> 637 575 000',
 
+      'hero.cta3':   'Telegram',
       'hero.trust1': '+1,200 installations',
       'hero.trust2': '2-year warranty',
       'hero.trust3': 'Certified technicians',

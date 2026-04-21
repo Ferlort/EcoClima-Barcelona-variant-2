@@ -140,6 +140,11 @@ p { margin: 0 0 1rem; }
 .btn--whatsapp { background: var(--c-wa); box-shadow: 0 12px 32px -8px rgba(37,211,102,.5); }
 .btn--whatsapp:hover { background: var(--c-wa-dark); }
 
+.btn--telegram { background: #229ED9; color: #fff; box-shadow: 0 12px 32px -8px rgba(34,158,217,.5); }
+.btn--telegram:hover { background: #1b87b8; }
+.btn__icon-tg { display: inline-flex; align-items: center; justify-content: center; }
+.btn__icon-tg svg { display: block; }
+
 .btn--ghost    { background: transparent; color: var(--c-text); border: 1px solid var(--c-border); }
 .btn--ghost:hover { background: var(--c-bg-alt); }
 
@@ -279,10 +284,21 @@ p { margin: 0 0 1rem; }
   max-width: 34rem;
 }
 .hero__ctas {
-  display: flex;
-  flex-wrap: wrap;
+  /* Evenly-distributed row of CTAs.
+     auto-fit + minmax keeps all buttons the SAME width at any viewport:
+     - Narrow screens (< ~510px): 1 full-width column (stacked)
+     - Medium:                    2 equal columns
+     - Wide enough:               3 equal columns — the three CTAs share the row */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 0.75rem;
   margin-bottom: 1.75rem;
+  align-items: stretch;
+}
+.hero__ctas .btn {
+  width: 100%;
+  min-width: 0;         /* prevents long labels from pushing the grid */
+  padding-inline: 1rem; /* slightly tighter so "Calcular mi precio" fits without wrapping */
 }
 .hero__trust {
   display: flex;
