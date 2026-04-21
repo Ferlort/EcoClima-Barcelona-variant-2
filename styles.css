@@ -471,7 +471,20 @@ p { margin: 0 0 1rem; }
 }
 .cta-final h2 { font-size: var(--fs-h2); color: #fff; }
 .cta-final p { color: rgba(255,255,255,0.8); margin-bottom: 1.75rem; }
-.cta-final__btns { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+/* Evenly-distributed CTA row — same logic as .hero__ctas.
+   Narrow: stacks 1 col; medium: 2 cols; wide: 3 equal columns. */
+.cta-final__btns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.75rem;
+  align-items: stretch;
+  width: 100%;
+}
+.cta-final__btns .btn {
+  width: 100%;
+  min-width: 0;
+  padding-inline: 1rem;
+}
 
 /* ---------- 11. Calculator ---------- */
 .calculator {
